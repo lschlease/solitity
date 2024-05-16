@@ -53,3 +53,24 @@ contract Primitives {
     int256 public defaultInt; // 0
     address public defaultAddr; // 0x0000000000000000000000000000000000000000
 }
+
+
+contract types {
+    bool public  test = true;
+
+    uint8 public  test1=88
+    uint16 public  test2
+    uint256 public  test3
+
+    int8 public test4
+    int128 public test5
+    int256 public  test6
+    address public address1 0x0000000000000000000000000000000000000000
+    address public  address2 0x0000000000000000000000000000000000000000
+
+
+
+
+
+
+}

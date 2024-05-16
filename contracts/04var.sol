@@ -15,3 +15,4 @@ contract Variables {
         address sender = msg.sender; // address of the caller
     }
 }
+

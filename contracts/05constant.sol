@@ -7,3 +7,4 @@ contract Constants {
         0x777788889999AaAAbBbbCcccddDdeeeEfFFfCcCc;
     uint256 public constant MY_UINT = 123;
 }
+
