@@ -7,12 +7,26 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "greet",
+				"name": "fund",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "give",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "onwer",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "address",
 						"name": "",
-						"type": "string"
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -32,7 +46,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/01helloWorld.sol": "HelloWorld"
+			"contracts/ls/test.sol": "founMe"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -46,12 +60,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/01helloWorld.sol": {
-			"keccak256": "0xac41dc6bc64de291d46a13e67927d4fb4e40c8f9bd9eb69b2dfa6ecdcfc34af1",
+		"contracts/ls/test.sol": {
+			"keccak256": "0x4d1597cafb66926a1b5a89c61fa5d00e25bdaa8a68b6e617dd27e50f83baabe6",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://af8230dea4665763d14ff1f5cdee0d7aa806b570f50db932e14182047591ddf1",
-				"dweb:/ipfs/QmabvcP3HbRCKgWJMD4fgXa45GHwxMX9MMrJxqifMrFwvd"
+				"bzz-raw://7ec5167e3318749ed8a8205b9eba97340855516121569281fc8a7cd054266971",
+				"dweb:/ipfs/QmT7F9vefwqSYKmGtbKFBCT1CeuEVCnFp1PXPcpQiC9FYH"
 			]
 		}
 	},
