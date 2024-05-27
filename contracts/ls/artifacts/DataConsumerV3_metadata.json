@@ -12,39 +12,12 @@
 			},
 			{
 				"inputs": [],
-				"name": "ETHTOUSD",
+				"name": "getChainlinkDataFeedLatestAnswer",
 				"outputs": [
 					{
 						"internalType": "int256",
 						"name": "",
 						"type": "int256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "fund",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "give",
-				"outputs": [],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "onwer",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -58,13 +31,21 @@
 		},
 		"userdoc": {
 			"kind": "user",
-			"methods": {},
+			"methods": {
+				"constructor": {
+					"notice": "Network: Sepolia Aggregator: ETH/USD Address: 0x694AA1769357215DE4FAC081bf1f309aDC325306"
+				},
+				"getChainlinkDataFeedLatestAnswer()": {
+					"notice": "Returns the latest answer."
+				}
+			},
+			"notice": "If you are reading data feeds on L2 networks, you must check the latest answer from the L2 Sequencer Uptime Feed to ensure that the data is accurate in the event of an L2 sequencer outage. See the https://docs.chain.link/data-feeds/l2-sequencer-feeds page for details.",
 			"version": 1
 		}
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/ls/test.sol": "founMe"
+			"contracts/ls/getpriceETH.sol": "DataConsumerV3"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -86,12 +67,12 @@
 				"dweb:/ipfs/QmaG6vz6W6iEUBsbHSBob5mdcitYxWjoygxREHpsJHfWrS"
 			]
 		},
-		"contracts/ls/test.sol": {
-			"keccak256": "0x9d7de1ee54bbb81c78fa67d912d4d972a8c179faf57ded082986d81501959284",
+		"contracts/ls/getpriceETH.sol": {
+			"keccak256": "0x7251f720bdbff14f2e3076e83961f45eb247c36793781e58b0a45a8aa258d1aa",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://25c98cf2738fe505ff168158ab7e51d58eb71f1b2dd875f7b9a7d3b79d1a7e3d",
-				"dweb:/ipfs/QmVjDoqkSVWbNPdnx7KtPbBWUVDuhcCeGEEwhCRreaoSue"
+				"bzz-raw://63dc3091d6cb59bfb2708f9ec39bfd6c840bca2b3390061672fe82ff7f81a9ee",
+				"dweb:/ipfs/QmcJJkyy2tPaV66sZSaxXrbRPwAmyvBkqRAnt5vy4of671"
 			]
 		}
 	},
