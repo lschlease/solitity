@@ -10,7 +10,7 @@ contract founMe {
     address public onwer;
     AggregatorV3Interface internal dataFeed;
 
-    uint256 minusd = 100;
+    uint256 minETH = 1 ether;
 
     constructor() {
         onwer = msg.sender;
@@ -20,7 +20,7 @@ contract founMe {
     }
 
     function fund() public payable {
-        require(msg.value > 100 wei, "must then 1 eth");
+        require(msg.value > minETH, "must then 1 eth");
     }
 
     function give() public view {
@@ -31,11 +31,12 @@ contract founMe {
         // prettier-ignore
         (
             /* uint80 roundID */,
-            int answer,
+            int price,
             /*uint startedAt*/,
             /*uint timeStamp*/,
             /*uint80 answeredInRound*/
         ) = dataFeed.latestRoundData();
-        return (1 / answer) * 100;
+
+        return price;
     }
 }
