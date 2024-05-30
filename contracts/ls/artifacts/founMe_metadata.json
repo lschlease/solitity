@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.25+commit.b61c2a91"
+		"version": "0.8.24+commit.e11b9ed9"
 	},
 	"language": "Solidity",
 	"output": {
@@ -12,29 +12,9 @@
 			},
 			{
 				"inputs": [],
-				"name": "ETHTOUSD",
-				"outputs": [
-					{
-						"internalType": "int256",
-						"name": "",
-						"type": "int256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
 				"name": "fund",
 				"outputs": [],
 				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "give",
-				"outputs": [],
-				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -48,6 +28,13 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdrawal",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -66,7 +53,7 @@
 		"compilationTarget": {
 			"contracts/ls/test.sol": "founMe"
 		},
-		"evmVersion": "cancun",
+		"evmVersion": "shanghai",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -78,20 +65,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol": {
-			"keccak256": "0x257a8d28fa83d3d942547c8e129ef465e4b5f3f31171e7be4739a4c98da6b4f0",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://6d39e11b1dc7b9b8ccdabbc9be442ab7cda4a81c748f57e316dcb1bcb4a28bf9",
-				"dweb:/ipfs/QmaG6vz6W6iEUBsbHSBob5mdcitYxWjoygxREHpsJHfWrS"
-			]
-		},
 		"contracts/ls/test.sol": {
-			"keccak256": "0x6ea3fa1799a83fc454a94e602f1994e6b80f70736678a0c2a3398bae217d2d0e",
+			"keccak256": "0xea183142fe1a4a0efacb3a1ebe9a0c87b0193ffc21f56164f103bd0ecfe6be7c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0a13dedc9deb24cb4401f6b48b927bd1ed59a0d5bfe4dbc076eae03daf784636",
-				"dweb:/ipfs/Qmdp5CwQtHYrUwMwPqaKzMte3saMeym1owdG7b6RHFSoLj"
+				"bzz-raw://261f3f7041dd4bb5b2c3289eb319124fd04015c3004e1a5246e6ff54ae3645bd",
+				"dweb:/ipfs/QmVXGZqGGzgjYZPpbbh9sb2Chcc82dw5HhW9T6FfrtXGTu"
 			]
 		}
 	},
