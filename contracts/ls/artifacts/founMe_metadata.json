@@ -11,6 +11,48 @@
 				"type": "constructor"
 			},
 			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "addressToEth",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "founders",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "fund",
 				"outputs": [],
@@ -36,6 +78,10 @@
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -51,7 +97,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/ls/test.sol": "founMe"
+			"contracts/ls/wallet_ls.sol": "founMe"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -65,12 +111,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/ls/test.sol": {
-			"keccak256": "0xea183142fe1a4a0efacb3a1ebe9a0c87b0193ffc21f56164f103bd0ecfe6be7c",
+		"contracts/ls/wallet_ls.sol": {
+			"keccak256": "0x15675441265669604b9363fa6d8f2b57a7f79453f43bec5707ceaf5784d0b0f2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://261f3f7041dd4bb5b2c3289eb319124fd04015c3004e1a5246e6ff54ae3645bd",
-				"dweb:/ipfs/QmVXGZqGGzgjYZPpbbh9sb2Chcc82dw5HhW9T6FfrtXGTu"
+				"bzz-raw://fd568d05c4faed3ddc84bff371646a37af41b45279a144abe290800c4d009e14",
+				"dweb:/ipfs/Qmby1Z3KzaqgAraL9uZUZbCcJo2yvVw85ic3kPuhCcrGwz"
 			]
 		}
 	},
